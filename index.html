@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gertino — Monteur vidéo freelance | Shorts, publicités, podcasts &amp; évènements</title>
+<meta name="description" content="Monteur et vidéaste freelance : des Shorts, publicités et contenus sponsorisés qui accrochent dès la première seconde. Montage multicam, podcasts, évènements et concerts. Parlons de votre projet.">
+<meta property="og:title" content="Gertino — Des montages qui arrêtent le scroll">
+<meta property="og:description" content="Monteur &amp; vidéaste freelance : Shorts, publicités, contenu sponsorisé, podcasts et évènements. Voir le portfolio et parler de votre projet.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/gertino-portrait.jpg">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2064%2064%22%3E%3Crect%20width%3D%2264%22%20height%3D%2264%22%20rx%3D%2214%22%20fill%3D%22%230a0a0c%22/%3E%3Ctext%20x%3D%2231%22%20y%3D%2240%22%20text-anchor%3D%22middle%22%20font-family%3D%22Arial%20Narrow%2CArial%2Csans-serif%22%20font-weight%3D%22900%22%20font-size%3D%2234%22%20fill%3D%22%23fff%22%3EG%3C/text%3E%3Cg%20fill%3D%22%23ffffff%22%20opacity%3D%22.45%22%3E%3Crect%20x%3D%2210%22%20y%3D%2248%22%20width%3D%221.5%22%20height%3D%225%22/%3E%3Crect%20x%3D%2218%22%20y%3D%2248%22%20width%3D%221.5%22%20height%3D%225%22/%3E%3Crect%20x%3D%2226%22%20y%3D%2248%22%20width%3D%221.5%22%20height%3D%225%22/%3E%3Crect%20x%3D%2234%22%20y%3D%2248%22%20width%3D%221.5%22%20height%3D%225%22/%3E%3Crect%20x%3D%2242%22%20y%3D%2248%22%20width%3D%221.5%22%20height%3D%225%22/%3E%3Crect%20x%3D%2250%22%20y%3D%2248%22%20width%3D%221.5%22%20height%3D%225%22/%3E%3C/g%3E%3Crect%20x%3D%2238%22%20y%3D%2244%22%20width%3D%223%22%20height%3D%2213%22%20rx%3D%221%22%20fill%3D%22%23ff1f45%22/%3E%3Ccircle%20cx%3D%2246%22%20cy%3D%2218%22%20r%3D%224%22%20fill%3D%22%23ff1f45%22/%3E%3C/svg%3E">
+<meta name="theme-color" content="#0a0a0c">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=23">
+</head>
+<body class="has-leader">
+
+<a class="skip-link" href="#main">Aller au contenu</a>
+
+<!-- Amorce de film (compte à rebours) -->
+<div class="leader" id="leader" aria-hidden="true">
+  <div class="leader-cross"></div>
+  <div class="leader-dial">
+    <div class="leader-sweep"></div>
+    <div class="leader-ring"></div>
+    <span class="leader-num" id="leaderNum">3</span>
+  </div>
+  <span class="leader-meta leader-meta--l mono">Gertino — Bobine <span data-year></span></span>
+  <span class="leader-meta leader-meta--r mono" data-tc="clock">00:00:00:00</span>
+</div>
+
+<!-- En-tête -->
+<header class="site-header" id="siteHeader">
+  <div class="header-bar">
+    <a href="#top" class="logo" aria-label="Gertino — accueil">
+      <span class="logo-word">Gertino<span class="logo-dot">.</span></span>
+      <span class="logo-ruler" aria-hidden="true"><span class="logo-playhead"></span></span>
+    </a>
+    <div class="header-rec mono" aria-hidden="true">
+      <span class="rec-dot"></span> Rec <span data-tc="clock">00:00:00:00</span> <span class="dim">— 23.976 ips</span>
+    </div>
+    <div class="header-actions">
+      <a href="https://wa.me/261389574357" target="_blank" rel="noopener" class="header-phone mono">WhatsApp</a>
+      <a href="#contact" class="pill pill--outline header-cta">Un projet ? <span aria-hidden="true">→</span></a>
+      <button class="pill pill--light menu-btn" id="menuBtn" aria-expanded="false" aria-controls="menuPanel">
+        <span class="menu-btn-label">Menu</span>
+        <span class="menu-btn-icon" aria-hidden="true"><i></i><i></i></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- Menu plein écran -->
+<nav class="menu-panel" id="menuPanel" aria-label="Navigation principale" hidden>
+  <div class="menu-inner">
+    <ol class="menu-scenes">
+      <li><a href="#a-propos"><span class="mono">Sc.01</span> À propos</a></li>
+      <li><a href="#video"><span class="mono">Sc.02</span> Réalisations</a></li>
+      <li><a href="#specialites"><span class="mono">Sc.03</span> Spécialités</a></li>
+      <li><a href="#processus"><span class="mono">Sc.04</span> Processus</a></li>
+      <li><a href="#contact"><span class="mono">Sc.05</span> Contact</a></li>
+      <li><a href="portfolio.html"><span class="mono">Sc.06</span> Portfolio complet</a></li>
+    </ol>
+    <div class="menu-foot mono">
+      <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=gertinobemahefa@gmail.com" target="_blank" rel="noopener">gertinobemahefa@gmail.com</a>
+      <a href="https://wa.me/261389574357" target="_blank" rel="noopener">WhatsApp</a>
+      <a href="https://www.linkedin.com/in/gertino-bemahefa-6746b2389" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </div>
+</nav>
+
+<main id="main">
+
+  <!-- HERO -->
+  <section id="top" class="hero">
+    <div class="hero-media" id="heroMedia">
+      <video class="hero-video" id="heroVideo" autoplay muted loop playsinline preload="auto"
+             poster="assets/fond-poster.jpg" aria-hidden="true" tabindex="-1">
+        <source src="assets/fond-loop.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="hero-shade"></div>
+
+    <div class="viewfinder" aria-hidden="true">
+      <span class="vf-corner vf-tl"></span><span class="vf-corner vf-tr"></span>
+      <span class="vf-corner vf-bl"></span><span class="vf-corner vf-br"></span>
+      <span class="vf-info vf-info--l mono"><span class="rec-dot"></span> Rec <span data-tc="clock">00:00:00:00</span></span>
+      <span class="vf-info vf-info--r mono">4K &nbsp; 23.976 ips &nbsp; ISO 800 &nbsp; f/2.8 &nbsp;<span class="battery"><i></i><i></i><i></i><i></i></span></span>
+    </div>
+
+    <div class="hero-content">
+      <h1 class="display reveal">
+        <span class="line">Des montages qui</span>
+        <span class="line accent cond">arrêtent le scroll</span>
+      </h1>
+      <p class="hero-sub reveal"><span class="sent"><span class="chev">›</span> Monteur &amp; vidéaste&nbsp;freelance</span><span class="sent">Shorts, publicités, contenu sponsorisé, podcasts et&nbsp;évènements</span></p>
+      <div class="hero-ctas reveal">
+        <a href="#contact" class="pill pill--light">Lancer mon projet <span aria-hidden="true">→</span></a>
+        <a href="#video" class="pill pill--outline"><span aria-hidden="true">▶</span> Voir mes réalisations</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- À PROPOS -->
+  <section id="a-propos" class="section about">
+    <div class="container about-grid">
+      <div class="about-main">
+        <p class="kicker mono reveal">Gertino en bref</p>
+        <h2 class="display reveal">
+          <span class="line">Votre message,</span>
+          <span class="line accent cond">monté pour être vu</span>
+        </h2>
+        <p class="lead reveal"><span class="sent">Je&nbsp;suis Gertino, monteur et&nbsp;vidéaste&nbsp;freelance.</span><span class="sent">Je&nbsp;transforme vos&nbsp;rushs en&nbsp;vidéos qui&nbsp;accrochent dès&nbsp;la&nbsp;première seconde, retiennent l'attention jusqu'au&nbsp;bout et&nbsp;donnent envie&nbsp;d'agir.</span><span class="sent">Publicité, Short, contenu sponsorisé, podcast ou&nbsp;évènement&nbsp;:<span class="nl"></span> chaque montage est&nbsp;pensé pour&nbsp;sa&nbsp;plateforme et&nbsp;pour&nbsp;votre&nbsp;objectif.</span></p>
+      </div>
+
+      <div class="about-side">
+        <div class="reveal" id="introPlayer">
+          <video preload="metadata" playsinline poster="assets/presentation-poster.jpg">
+            <source src="assets/presentation.mp4" type="video/mp4">
+          </video>
+        </div>
+
+        <dl class="facts reveal">
+          <div><dt class="mono">Métier</dt><dd>Monteur &amp; vidéaste&nbsp;freelance</dd></div>
+          <div><dt class="mono">Pour qui</dt><dd>Marques, créateurs, agences et&nbsp;organisateurs&nbsp;d'évènements</dd></div>
+          <div><dt class="mono">Spécialités</dt><dd>Shorts, publicités, contenu sponsorisé, multicam &amp; podcast, évènements &amp;&nbsp;concerts</dd></div>
+          <div><dt class="mono">Portfolio</dt><dd><span id="factCount">—</span> vidéos en&nbsp;ligne, de&nbsp;la&nbsp;pub au&nbsp;podcast</dd></div>
+          <div><dt class="mono">Dernière sortie</dt><dd id="factLatest">—</dd></div>
+          <div><dt class="mono">Contact</dt><dd>Directement avec moi, par&nbsp;WhatsApp, e-mail ou&nbsp;LinkedIn</dd></div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <!-- VIDÉO -->
+  <section id="video" class="section video">
+    <div class="container video-head">
+      <div>
+        <p class="kicker mono reveal">Vidéo</p>
+        <h2 class="display reveal">
+          <span class="line">Fraîchement</span>
+          <span class="line accent cond">sorti du montage</span>
+        </h2>
+      </div>
+      <div class="video-head-actions reveal">
+        <a href="portfolio.html" class="pill pill--outline">Voir toutes les vidéos <span aria-hidden="true">→</span></a>
+        <div class="strip-nav">
+          <button class="round-btn" id="stripPrev" aria-label="Vidéos précédentes">←</button>
+          <button class="round-btn" id="stripNext" aria-label="Vidéos suivantes">→</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="filmstrip reveal">
+      <div class="filmstrip-track" id="filmstrip" data-limit="home" aria-live="polite">
+        <p class="grid-status mono" data-status>Chargement de la bobine…</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SPÉCIALITÉS -->
+  <section id="specialites" class="section services">
+    <div class="container">
+      <p class="kicker mono reveal">Spécialités</p>
+      <h2 class="display reveal">
+        <span class="line">Ce que je</span>
+        <span class="line accent cond">monte pour vous</span>
+      </h2>
+
+      <ol class="service-list">
+        <li class="service reveal">
+          <span class="service-num mono">Sc.01</span>
+          <h3 class="service-title">Shorts</h3>
+          <p class="service-desc">Une&nbsp;accroche dès&nbsp;la&nbsp;première seconde, un&nbsp;rythme serré et&nbsp;des&nbsp;sous-titres dynamiques&nbsp;: des&nbsp;formats verticaux taillés pour&nbsp;TikTok, Reels et&nbsp;YouTube&nbsp;Shorts.</p>
+        </li>
+        <li class="service reveal">
+          <span class="service-num mono">Sc.02</span>
+          <h3 class="service-title">Publicités <span class="cond accent">(Ads)</span></h3>
+          <p class="service-desc">Des&nbsp;pubs qui&nbsp;vont droit au&nbsp;but&nbsp;: votre&nbsp;offre mise en&nbsp;avant, un&nbsp;message limpide et&nbsp;un&nbsp;appel à&nbsp;l'action qui&nbsp;donne envie de&nbsp;cliquer.</p>
+        </li>
+        <li class="service reveal">
+          <span class="service-num mono">Sc.03</span>
+          <h3 class="service-title">Contenu sponsorisé</h3>
+          <p class="service-desc">Des&nbsp;intégrations de&nbsp;marque naturelles, qui&nbsp;gardent le&nbsp;ton du&nbsp;créateur et&nbsp;servent les&nbsp;objectifs de&nbsp;l'annonceur. Le&nbsp;public reste, le&nbsp;message&nbsp;passe.</p>
+        </li>
+        <li class="service reveal">
+          <span class="service-num mono">Sc.04</span>
+          <h3 class="service-title">Multicam <span class="cond accent">&amp; podcast</span></h3>
+          <p class="service-desc">Synchronisation multicaméra et&nbsp;coupes au&nbsp;bon moment&nbsp;: vos&nbsp;conversations restent vivantes, du&nbsp;premier mot à&nbsp;la&nbsp;conclusion.</p>
+        </li>
+        <li class="service reveal">
+          <span class="service-num mono">Sc.05</span>
+          <h3 class="service-title">Évènements <span class="cond accent">&amp; concerts</span></h3>
+          <p class="service-desc">Captation et&nbsp;montage qui&nbsp;font revivre l'énergie du&nbsp;moment&nbsp;: aftermovies, teasers et&nbsp;temps forts à&nbsp;partager.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- PROCESSUS -->
+  <section id="processus" class="section process">
+    <div class="container">
+      <p class="kicker mono reveal">Processus</p>
+      <h2 class="display reveal">
+        <span class="line">OK, comment</span>
+        <span class="line accent cond">ça marche&nbsp;?</span>
+      </h2>
+
+      <div class="timeline reveal" id="timeline">
+        <div class="timeline-ruler mono" aria-hidden="true">
+          <span>00:00</span><span>00:15</span><span>00:30</span><span>00:45</span><span>01:00</span>
+        </div>
+        <div class="timeline-steps">
+          <div class="step"><span class="step-num">1</span><p>Vous&nbsp;m'envoyez votre&nbsp;idée, vos&nbsp;rushs ou&nbsp;votre&nbsp;brief, même en&nbsp;vrac.</p></div>
+          <div class="step"><span class="step-num">2</span><p>On&nbsp;définit ensemble le&nbsp;format, le&nbsp;ton, les&nbsp;plateformes et&nbsp;le&nbsp;délai.</p></div>
+          <div class="step"><span class="step-num">3</span><p>Je&nbsp;monte une&nbsp;première version, vous&nbsp;la&nbsp;commentez,&nbsp;j'ajuste.</p></div>
+          <div class="step"><span class="step-num">4</span><p>Vous&nbsp;recevez des&nbsp;fichiers prêts à&nbsp;publier, aux&nbsp;bons&nbsp;formats.</p></div>
+        </div>
+        <div class="playhead" id="playhead" aria-hidden="true"></div>
+      </div>
+
+      <div class="process-foot reveal">
+        <p><span class="sent">Créateur, marque, agence ou&nbsp;organisateur d'évènement&nbsp;:<span class="nl"></span> tout commence par&nbsp;un&nbsp;simple&nbsp;échange.</span><span class="sent">Expliquez-moi votre&nbsp;projet, je&nbsp;vous&nbsp;dis comment je&nbsp;peux vous&nbsp;aider.</span></p>
+        <a href="#contact" class="pill pill--light">Discutons de votre projet <span aria-hidden="true">→</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section contact">
+    <div class="container">
+      <p class="kicker mono reveal">Contact</p>
+      <h2 class="display display--xl reveal">
+        <span class="line">Un projet&nbsp;?</span>
+        <span class="line accent cond">Parlons-en&nbsp;!</span>
+      </h2>
+
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <p class="lead"><span class="sent">Racontez-moi votre&nbsp;projet en&nbsp;quelques lignes&nbsp;:<span class="nl"></span> le&nbsp;format, la&nbsp;plateforme, le&nbsp;délai.</span><span class="sent">Je&nbsp;vous&nbsp;réponds personnellement avec une&nbsp;proposition&nbsp;adaptée.</span></p>
+          <div class="contact-item">
+            <span class="mono label">E-mail</span>
+            <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=gertinobemahefa@gmail.com" target="_blank" rel="noopener" class="big-link">gertinobemahefa@gmail.com</a>
+          </div>
+          <div class="contact-item">
+            <span class="mono label">WhatsApp</span>
+            <a href="https://wa.me/261389574357" target="_blank" rel="noopener" class="big-link">+261 38 95 743 57</a>
+          </div>
+          <div class="contact-item">
+            <span class="mono label">LinkedIn</span>
+            <a href="https://www.linkedin.com/in/gertino-bemahefa-6746b2389" target="_blank" rel="noopener" class="big-link">Gertino Bemahefa</a>
+          </div>
+        </div>
+
+        <form class="contact-form reveal" id="contactForm" novalidate>
+          <div class="field"><label for="fName" class="mono">Prénom</label><input id="fName" name="prenom" type="text" autocomplete="given-name"></div>
+          <div class="field"><label for="fLast" class="mono">Nom</label><input id="fLast" name="nom" type="text" autocomplete="family-name"></div>
+          <div class="field field--full"><label for="fType" class="mono">Type de projet</label>
+            <select id="fType" name="type">
+              <option>Shorts</option><option>Publicité (Ads)</option><option>Contenu sponsorisé</option>
+              <option>Multicam / Podcast</option><option>Évènement / Concert</option><option>Autre</option>
+            </select>
+          </div>
+          <div class="field field--full"><label for="fMsg" class="mono">Votre projet *</label><textarea id="fMsg" name="message" rows="4" required placeholder="Ex. : 3 publicités de 30 s pour Instagram, rushs déjà tournés, livraison souhaitée fin du mois."></textarea></div>
+          <p class="form-result mono" id="formResult" hidden></p>
+          <p class="form-error mono" id="formError" hidden>Décrivez votre projet en quelques mots.</p>
+          <div class="form-actions">
+            <button type="submit" class="pill pill--light" data-via="email">Envoyer par e-mail <span aria-hidden="true">→</span></button>
+            <button type="submit" class="pill pill--outline" data-via="whatsapp">Envoyer sur WhatsApp</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <a href="#contact" class="footer-cta">Prêt pour votre prochaine vidéo&nbsp;? <span class="accent">Parlons-en →</span></a>
+    <span class="footer-word">Gertino</span>
+    <div class="footer-links mono">
+      <a href="portfolio.html">Portfolio complet</a>
+      <a href="https://wa.me/261389574357" target="_blank" rel="noopener">WhatsApp</a>
+      <a href="https://www.linkedin.com/in/gertino-bemahefa-6746b2389" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </div>
+</footer>
+
+<!-- HUD flottant -->
+<div class="tc-float mono" aria-hidden="true"><span class="rec-dot"></span> TC <span id="scrollTc">00:00:00:00</span></div>
+<a href="#top" class="to-top" id="toTop" aria-label="Revenir en haut">↑</a>
+
+<!-- Lecteur vidéo -->
+<div class="modal" id="modal" hidden>
+  <div class="modal-backdrop" data-close></div>
+  <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-top mono">
+      <span class="modal-title" id="modalTitle"></span>
+      <button class="modal-close" data-close aria-label="Fermer">Fermer ×</button>
+    </div>
+    <div class="modal-player" id="modalPlayer"></div>
+    <a class="modal-yt mono" id="modalYt" href="#" target="_blank" rel="noopener">Ouvrir sur YouTube ↗</a>
+  </div>
+</div>
+
+<script src="config.js?v=23"></script>
+<script src="player.js?v=23"></script>
+<script src="script.js?v=23"></script>
+</body>
+</html>
