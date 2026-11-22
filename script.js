@@ -260,9 +260,7 @@
         <span class="play" aria-hidden="true"></span>
       </div>
       <div class="frame-meta"><h3 class="frame-title">${esc(v.title)}</h3></div>`;
-  const frameHTML = (v, i) => (CFG.preview
-    ? `<a class="frame" href="https://www.youtube.com/watch?v=${encodeURIComponent(v.id)}" target="_blank" rel="noopener" draggable="false" aria-label="Voir sur YouTube : ${esc(v.title)}">${frameInner(v, i)}</a>`
-    : `<button type="button" class="frame" data-id="${esc(v.id)}" data-title="${esc(v.title)}" aria-label="Lire la vidéo : ${esc(v.title)}">${frameInner(v, i)}</button>`);
+  const frameHTML = (v, i) => `<button type="button" class="frame" data-id="${esc(v.id)}" data-title="${esc(v.title)}" aria-label="Lire la vidéo : ${esc(v.title)}">${frameInner(v, i)}</button>`;
 
   const strip = $('#filmstrip');
   const grid = $('#reelGrid');
@@ -361,7 +359,6 @@
     player.innerHTML = '<div class="modal-stage"></div>';
     modalCtrl = window.GPlayer.youtube($('.modal-stage', player), id, { autoplay: true });
     $('#modalTitle').textContent = title;
-    $('#modalYt').href = `https://www.youtube.com/watch?v=${encodeURIComponent(id)}`;
     modal.hidden = false;
     document.documentElement.style.overflow = 'hidden';
     $('.modal-close', modal).focus();
