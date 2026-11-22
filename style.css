@@ -879,3 +879,6 @@ a:hover > .back-arrow, a:hover .back-btn-icon { transform: translate3d(-5px, 0, 
 .logo:hover .logo-playhead { transition: transform .9s var(--ease-out); }
 @media (max-width: 640px) { .logo-word { font-size: 21px; } .logo, .page-portfolio .logo { padding: 5px 10px 5px 12px; } }
 
+
+/* Pas de numérotation sur la page portfolio (ne révèle pas le nombre de vidéos) */
+.reel-grid .frame-label { display: none; }

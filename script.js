@@ -271,14 +271,12 @@
     const limit = Number(CFG.homeLimit) || 8;
     strip.innerHTML = videos.slice(0, limit).map(frameHTML).join('') + `
       <a href="portfolio.html" class="frame frame--more">
-        <span class="mono">${videos.length} prises</span>
+        <span class="mono">Portfolio</span>
         <strong>Portfolio<br>complet →</strong>
       </a>`;
   }
 
   function renderGrid(videos) {
-    const count = $('#reelCount');
-    if (count) count.textContent = videos.length;
     const draw = (list) => {
       grid.innerHTML = list.length
         ? list.map((v) => frameHTML(v, videos.indexOf(v))).join('')
@@ -292,9 +290,7 @@
   }
 
   function fillFacts(videos) {
-    const count = $('#factCount');
     const latest = $('#factLatest');
-    if (count) count.textContent = videos.length;
     if (latest && videos[0]) latest.textContent = videos[0].title;
   }
 
