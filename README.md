@@ -9,7 +9,7 @@ Site statique (HTML/CSS/JS, sans framework ni serveur), prêt pour GitHub Pages.
 - `script.js` : chargement des vidéos YouTube, défilement fluide, animations, formulaire
 - `player.js` : lecteur vidéo maison (vidéo de présentation + vidéos YouTube)
 - `config.js` : **les réglages** (clé API, playlist, vidéos à masquer, nombre de vidéos sur l'accueil)
-- `assets/` : vidéo de fond (`fond-loop.mp4`), vidéo de présentation (`presentation.mp4`) et leurs images d'attente
+- `assets/` : vidéo de fond (`fond-loop.mp4`) et images d'attente ; `presentation.mp4` (vidéo de présentation) est à la racine
 
 ## La « base de données » = la chaîne YouTube
 Les vidéos publiques de la chaîne s'affichent automatiquement, de la plus récente à la plus ancienne.
