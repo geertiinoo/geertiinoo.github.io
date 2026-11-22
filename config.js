@@ -11,7 +11,7 @@
 //  dans les restrictions de la clé, sinon les vidéos ne chargeront pas.
 // ─────────────────────────────────────────────────────────────
 window.SITE_CONFIG = {
-  youtubeApiKey: 'AIzaSyBQtbbkoBeypub5Joqf5DdD7iS0HImFIOc',
+  youtubeApiKey: 'AIzaSyBN7yFB3IiSgde6cliPlmJYnnhV0KexC1s',
 
   // Playlist « uploads » de la chaîne (= ID de chaîne avec « UU » au lieu de « UC »)
   uploadsPlaylistId: 'UUKHgYX0vGJ_hnzshUNARHXQ',
